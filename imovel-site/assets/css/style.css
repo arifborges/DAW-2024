@@ -12,15 +12,18 @@ body {
     margin: 0 auto;
 }
 
-header { /*Topo - Direita - Em baixo - Esquerda */
+header {
+    /*Topo - Direita - Em baixo - Esquerda */
     padding: 1.25rem 1.25rem 0 1.25rem;
 }
 
 header .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /*alinha horizontalmente com espaço entre eles */
-    align-items: center; /*alinha o centro verticalmente */
+    justify-content: space-between;
+    /*alinha horizontalmente com espaço entre eles */
+    align-items: center;
+    /*alinha o centro verticalmente */
 }
 
 header .brand {
@@ -33,7 +36,7 @@ header .brand img {
     width: 2.5rem;
 }
 
-header .brand h1{
+header .brand h1 {
     font-size: 1.5rem;
     color: #01528A;
     font-weight: 400;
@@ -62,7 +65,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-    color:#0889d4;
+    color: #0889d4;
 }
 
 header nav a.active {
@@ -98,7 +101,7 @@ main {}
 #banner .banner-content {
     width: 650px;
     height: 100%;
-    background: linear-gradient(270deg, rgba(255,255,255,0), #FFFFFF 50%);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0), #FFFFFF 50%);
 }
 
 #banner h3 {
@@ -123,7 +126,7 @@ section {
 }
 
 /* Topo/Baixo Esquerda/Direita*/
-section h2 { 
+section h2 {
     padding: 2rem 0;
     font-weight: 300;
     text-align: center;
@@ -131,7 +134,7 @@ section h2 {
     color: #01528A;
     margin: 2rem 0;
 
-} 
+}
 
 #cards {}
 
@@ -146,8 +149,8 @@ section h2 {
     display: flex;
     gap: 1rem;
     box-shadow: rgb(0 0 0 / 20%) 0 2px 1px -1px,
-                 rgb(0 0 0 / 14%) 0 1px 1px 0, 
-                 rgb(0 0 0 / 12%) 0 1px 3px 0;
+        rgb(0 0 0 / 14%) 0 1px 1px 0,
+        rgb(0 0 0 / 12%) 0 1px 3px 0;
     border-radius: 0.6rem;
     margin-bottom: 3rem;
     padding: 1rem;
@@ -218,4 +221,10 @@ section h2 {
     font-size: 1.5rem;
     font-weight: 300;
     color: #8f90a6;
+}
+
+#specialistas .specialists-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }
