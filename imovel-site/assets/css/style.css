@@ -1,29 +1,30 @@
+/* Reset de margens e padding */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Configuração da fonte principal */
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Container centralizado e com largura máxima */
 .container {
     max-width: 1160px;
     margin: 0 auto;
 }
 
+/* Cabeçalho */
 header {
-    /*Topo - Direita - Em baixo - Esquerda */
-    padding: 1.25rem 1.25rem 0 1.25rem;
+    padding: 1.25rem;
 }
 
 header .container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    /*alinha horizontalmente com espaço entre eles */
     align-items: center;
-    /*alinha o centro verticalmente */
 }
 
 header .brand {
@@ -43,8 +44,7 @@ header .brand h1 {
     line-height: 2rem;
 }
 
-header nav {}
-
+/* Navegação */
 header nav ul {
     display: flex;
     list-style-type: none;
@@ -85,8 +85,10 @@ header nav button {
     margin-left: 1rem;
 }
 
+/* Main */
 main {}
 
+/* Banner */
 #banner {
     height: 550px;
     border: 1px solid #dcdceb;
@@ -121,11 +123,11 @@ main {}
     font-size: 1.4rem;
 }
 
+/* Seções */
 section {
     margin-top: 4rem;
 }
 
-/* Topo/Baixo Esquerda/Direita*/
 section h2 {
     padding: 2rem 0;
     font-weight: 300;
@@ -133,11 +135,9 @@ section h2 {
     font-size: 2.5rem;
     color: #01528A;
     margin: 2rem 0;
-
 }
 
-#cards {}
-
+/* Cards */
 #cards .cards-content {
     display: flex;
     flex-wrap: wrap;
@@ -193,8 +193,7 @@ section h2 {
     margin: 0;
 }
 
-#reasons {}
-
+/* Razões para escolher */
 #reasons .reasons-content {
     display: flex;
     justify-content: space-between;
@@ -223,8 +222,72 @@ section h2 {
     color: #8f90a6;
 }
 
+/* Especialistas */
 #specialistas .specialists-content {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+}
+
+#specialists {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#specialists h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.specialists-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.specialist {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.specialist:hover {
+    transform: translateY(-10px);
+}
+
+.specialist-info h4 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.specialist-location {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.specialist-detail {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .specialists-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specialist {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
